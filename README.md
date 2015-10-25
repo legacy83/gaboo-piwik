@@ -1,3 +1,3 @@
-# Gaboo Types
+# Gaboo Piwik
 
-Collection of custom post types (CPTs) that can be reused with Gaboo & WordPress.
+Piwik Web Analytics, the leading open-source analytics platform that give us more than just powerful analytics.
