@@ -34,6 +34,8 @@ function gaboo_piwik_safe_includes()
      */
 
     require_once( 'includes/class-gaboo-piwik.php' );
+    require_once( 'includes/class-gaboo-piwik-options.php' );
+    require_once( 'includes/class-gaboo-piwik-section.php' );
     require_once( 'includes/gaboo-piwik-functions.php' );
 }
 
@@ -44,4 +46,6 @@ function gaboo_piwik_safe_includes()
 function gaboo_piwik_safe_bootstrap()
 {
     __gaboo_plugins_loaded( new Gaboo_Piwik() );
+    __gaboo_plugins_loaded( new Gaboo_Piwik_Options() );
+    __gaboo_plugins_loaded( new Gaboo_Piwik_Section() );
 }
