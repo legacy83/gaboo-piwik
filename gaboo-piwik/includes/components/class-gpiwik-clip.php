@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Gaboo_Piwik_Clip
+ * Class GPiwik_Clip
  */
-final class Gaboo_Piwik_Clip extends Gaboo_Clip
+final class GPiwik_Clip extends Gaboo_Clip
 {
     /**
      * Locate the template

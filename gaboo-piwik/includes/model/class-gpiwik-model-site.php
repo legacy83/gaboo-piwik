@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Gaboo_Piwik_Model_Site
+ * Class GPiwik_Model_Site
  */
-class Gaboo_Piwik_Model_Site
+class GPiwik_Model_Site
 {
     public $site_id;
     public $location;
@@ -22,15 +22,15 @@ class Gaboo_Piwik_Model_Site
     /**
      * Build the site model.
      *
-     * @return Gaboo_Piwik_Model_Site
+     * @return GPiwik_Model_Site
      */
     public static function get()
     {
-        $option = get_option( 'gaboo_piwik_model_site', array(
+        $option = get_option( 'gpiwik_model_site', array(
             'location' => '//piwik.192.168.27.14.xip.io/',
             'site_id' => 1,
         ) );
 
-        return new Gaboo_Piwik_Model_Site( $option );
+        return new GPiwik_Model_Site( $option );
     }
 }

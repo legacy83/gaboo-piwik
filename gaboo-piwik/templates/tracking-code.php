@@ -1,5 +1,5 @@
 <?php /** @var string $template */ ?>
-<?php /** @var Gaboo_Piwik_Model_Site $site */ ?>
+<?php /** @var GPiwik_Model_Site $site */ ?>
 
 <!-- Piwik -->
 <script type="text/javascript">
