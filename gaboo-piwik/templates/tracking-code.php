@@ -1,4 +1,4 @@
-<?php /** @var string $name */ ?>
+<?php /** @var string $template */ ?>
 <?php /** @var Gaboo_Piwik_Model_Site $site */ ?>
 
 <!-- Piwik -->

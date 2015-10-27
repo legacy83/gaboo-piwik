@@ -1,4 +1,4 @@
-<?php /** @var string $name */ ?>
+<?php /** @var string $template */ ?>
 
 <div class="wrap">
 
