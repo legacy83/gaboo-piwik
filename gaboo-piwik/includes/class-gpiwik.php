@@ -5,7 +5,7 @@
  */
 final class GPiwik
 {
-    function __plugins_loaded()
+    public function __plugins_loaded()
     {
         add_action( 'wp_footer', array( $this, 'the_tracking_code' ), 99 );
     }
@@ -13,7 +13,7 @@ final class GPiwik
     /**
      * Render the piwik tracking code.
      */
-    function the_tracking_code()
+    public function the_tracking_code()
     {
         $clip = new GPiwik_Clip();
         echo $clip->render( 'tracking-code', array(

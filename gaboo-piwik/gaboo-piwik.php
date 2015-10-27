@@ -2,7 +2,8 @@
 /**
  * Plugin Name: Gaboo Piwik
  * Plugin URI: https://github.com/trsenna/gaboo-piwik
- * Description: Piwik Web Analytics, the leading open-source analytics platform that give us more than just powerful analytics.
+ * Description: Piwik Web Analytics, the leading open-source analytics platform that give us more than just powerful
+ * analytics.
  *
  * Version: 0.1.0
  * Author: Thiago Senna
@@ -23,23 +24,14 @@ add_action( 'gaboo_back_compat_safe', 'gpiwik_safe_bootstrap' );
  */
 function gpiwik_safe_includes()
 {
-//    /*
-//     * components includes
-//     */
-//
-//    require_once( 'includes/components/class-gaboo-piwik-clip.php' );
-//
-//    /*
-//     * model includes
-//     */
-//
-//    require_once( 'includes/model/class-gaboo-piwik-model-site.php' );
-//
-//    /*
-//     * plugin includes
-//     */
-//
-//    require_once( 'includes/class-gaboo-piwik.php' );
+    // components
+    require_once( 'includes/components/class-gpiwik-clip.php' );
+
+    // models
+    require_once( 'includes/models/class-gpiwik-model-site.php' );
+
+    // includes
+    require_once( 'includes/class-gpiwik.php' );
 //    require_once( 'includes/class-gaboo-piwik-options.php' );
 //    require_once( 'includes/class-gaboo-piwik-section.php' );
 }
@@ -50,7 +42,7 @@ function gpiwik_safe_includes()
  */
 function gpiwik_safe_bootstrap()
 {
-//    __gaboo_plugins_loaded( new Gaboo_Piwik() );
+    __gaboo_plugins_loaded( new GPiwik() );
 //    __gaboo_plugins_loaded( new Gaboo_Piwik_Options() );
 //    __gaboo_plugins_loaded( new Gaboo_Piwik_Section() );
 }
