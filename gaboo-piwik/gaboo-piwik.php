@@ -24,10 +24,10 @@ add_action( 'gaboo_back_compat_safe', 'gaboo_piwik_safe_bootstrap' );
 function gaboo_piwik_safe_includes()
 {
     /*
-     * base includes
+     * components includes
      */
 
-    require_once( 'includes/base/class-gaboo-piwik-clip.php' );
+    require_once( 'includes/components/class-gaboo-piwik-clip.php' );
 
     /*
      * model includes
