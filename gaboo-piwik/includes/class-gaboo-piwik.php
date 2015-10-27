@@ -15,11 +15,9 @@ final class Gaboo_Piwik
      */
     function the_tracking_code()
     {
-        extract( array(
+        $clip = new Gaboo_Piwik_Clip();
+        echo $clip->render( 'tracking-code', array(
             'site' => Gaboo_Piwik_Model_Site::get(),
         ) );
-        
-        $templates_path = gaboo_piwik_templates_dir_path();
-        include( "{$templates_path}tracking-code.php" );
     }
 }

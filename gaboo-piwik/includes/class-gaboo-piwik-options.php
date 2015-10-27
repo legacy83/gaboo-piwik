@@ -28,7 +28,7 @@ final class Gaboo_Piwik_Options
      */
     function options_page()
     {
-        $templates_path = gaboo_piwik_templates_dir_path();
-        include( "{$templates_path}options-page.php" );
+        $clip = new Gaboo_Piwik_Clip();
+        echo $clip->render( 'options-page' );
     }
 }

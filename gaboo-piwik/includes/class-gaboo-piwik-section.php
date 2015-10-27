@@ -25,12 +25,10 @@ final class Gaboo_Piwik_Section
      */
     function section_callback()
     {
-        extract( array(
-            'site' => Gaboo_Piwik_Model_Site::get()
+        $clip = new Gaboo_Piwik_Clip();
+        echo $clip->render( 'section-piwik', array(
+            'site' => Gaboo_Piwik_Model_Site::get(),
         ) );
-
-        $templates_path = gaboo_piwik_templates_dir_path();
-        include( "{$templates_path}section-piwik.php" );
     }
 
     /**
