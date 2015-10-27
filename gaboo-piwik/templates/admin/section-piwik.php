@@ -1,3 +1,4 @@
+<?php /** @var string $name */ ?>
 <?php /** @var Gaboo_Piwik_Model_Site $site */ ?>
 
 <p><?php echo __( 'Get to know more about your users and their behaviour on your website – where they came from (referrers),

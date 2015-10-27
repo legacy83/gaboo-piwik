@@ -1,3 +1,5 @@
+<?php /** @var string $name */ ?>
+
 <div class="wrap">
 
     <h2><?php echo __( 'Web Analytics Settings', 'gaboo-piwik' ); ?></h2>
