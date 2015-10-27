@@ -32,8 +32,8 @@ function gpiwik_safe_includes()
 
     // includes
     require_once( 'includes/class-gpiwik.php' );
-//    require_once( 'includes/class-gaboo-piwik-options.php' );
-//    require_once( 'includes/class-gaboo-piwik-section.php' );
+    require_once( 'includes/class-gpiwik-options.php' );
+    require_once( 'includes/class-gpiwik-section.php' );
 }
 
 /**
@@ -43,6 +43,6 @@ function gpiwik_safe_includes()
 function gpiwik_safe_bootstrap()
 {
     __gaboo_plugins_loaded( new GPiwik() );
-//    __gaboo_plugins_loaded( new Gaboo_Piwik_Options() );
-//    __gaboo_plugins_loaded( new Gaboo_Piwik_Section() );
+    __gaboo_plugins_loaded( new GPiwik_Options() );
+    __gaboo_plugins_loaded( new GPiwik_Section() );
 }
