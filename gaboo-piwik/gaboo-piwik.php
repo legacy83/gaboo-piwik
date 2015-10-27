@@ -42,7 +42,6 @@ function gaboo_piwik_safe_includes()
     require_once( 'includes/class-gaboo-piwik.php' );
     require_once( 'includes/class-gaboo-piwik-options.php' );
     require_once( 'includes/class-gaboo-piwik-section.php' );
-    require_once( 'includes/gaboo-piwik-functions.php' );
 }
 
 /**

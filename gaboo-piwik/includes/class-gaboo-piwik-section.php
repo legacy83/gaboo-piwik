@@ -26,7 +26,7 @@ final class Gaboo_Piwik_Section
     function section_callback()
     {
         $clip = new Gaboo_Piwik_Clip();
-        echo $clip->render( 'section-piwik', array(
+        echo $clip->render( 'admin/section-piwik', array(
             'site' => Gaboo_Piwik_Model_Site::get(),
         ) );
     }

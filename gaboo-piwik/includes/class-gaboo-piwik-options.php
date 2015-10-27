@@ -29,6 +29,6 @@ final class Gaboo_Piwik_Options
     function options_page()
     {
         $clip = new Gaboo_Piwik_Clip();
-        echo $clip->render( 'options-page' );
+        echo $clip->render( 'admin/options-page' );
     }
 }
