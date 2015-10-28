@@ -25,10 +25,10 @@ add_action( 'gaboo_back_compat_safe', 'gpiwik_safe_bootstrap' );
 function gpiwik_safe_includes()
 {
     // components
-    require_once( 'includes/components/class-gpiwik-clip.php' );
+    require_once( 'includes/component/class-gpiwik-clip.php' );
 
     // models
-    require_once( 'includes/models/class-gpiwik-model-site.php' );
+    require_once( 'includes/model/class-gpiwik-model-site.php' );
 
     // includes
     require_once( 'includes/class-gpiwik.php' );
